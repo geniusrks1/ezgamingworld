@@ -1,0 +1,104 @@
+{
+    "Arrays": [
+      {
+        "problem": "Two Sum",
+        "link": "https://leetcode.com/problems/two-sum/",
+        "video": "https://www.youtube.com/watch?v=o2WOhGSfx_8"
+      },
+      {
+        "problem": "Best Time to Buy and Sell Stock",
+        "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+        "video": "https://www.youtube.com/watch?v=XIWykOHE1SE"
+      },
+      {
+        "problem": "Plus One",
+        "link": "https://leetcode.com/problems/plus-one/",
+        "video": "https://www.youtube.com/watch?v=FyzWXlSMNoI"
+      },
+      {
+        "problem": "Move Zeroes",
+        "link": "https://leetcode.com/problems/move-zeroes/",
+        "video": "https://www.youtube.com/watch?v=mgzcjQ1x9Mw"
+      },
+      {
+        "problem": "Best Time to Buy and Sell Stock II",
+        "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/",
+        "video": "https://www.youtube.com/watch?v=3gtcRtvDCpA"
+      },
+      {
+        "problem": "Running Sum of 1d Array",
+        "link": "https://leetcode.com/problems/running-sum-of-1d-array/",
+        "solution": "https://leetcode.com/problems/running-sum-of-1d-array/discuss/686261/JavaC%2B%2BPython-Array-Time-O(N)-Space-O(1)"
+      },
+      {
+        "problem": "Find Pivot Index",
+        "link": "https://leetcode.com/problems/find-pivot-index/",
+        "solution": "https://leetcode.com/problems/find-pivot-index/discuss/411318/Java%3A-beats100-1ms-easy-understanding-solution"
+      },
+      {
+        "problem": "Majority Element",
+        "link": "https://leetcode.com/problems/majority-element/",
+        "video": "https://www.youtube.com/watch?v=PqU48t80rn8"
+      },
+      {
+        "problem": "Fibonacci Number",
+        "link": "https://leetcode.com/problems/fibonacci-number/",
+        "video": "https://www.youtube.com/watch?v=MyFe2W2nIEE&list=PLKZaSt2df1gxtem7J8QqY8m2bHliz8mPt"
+      },
+      {
+        "problem": "Squares of a Sorted Array",
+        "link": "https://leetcode.com/problems/squares-of-a-sorted-array/",
+        "solution": "https://leetcode.com/problems/squares-of-a-sorted-array/discuss/495394/C%2B%2B%3A-Simplest-one-pass-two-pointers"
+      },
+      {
+        "problem": "Pascal's Triangle",
+        "link": "https://leetcode.com/problems/pascals-triangle/",
+        "solution": "https://leetcode.com/problems/pascals-triangle/discuss/38125/Solution-in-Java"
+      },
+      {
+        "problem": "Remove Duplicates from Sorted Array",
+        "link": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+        "solution": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/discuss/11782/Share-my-clean-C%2B%2B-code"
+      }
+    ],
+    "Trees": [
+      {
+        "problem": "Maximum Depth of Binary Tree",
+        "link": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+        "solution": "https://leetcode.com/problems/maximum-depth-of-binary-tree/discuss/34216/Simple-solution-using-Java"
+      },
+      {
+        "problem": "Symmetric Tree",
+        "link": "https://leetcode.com/problems/symmetric-tree/",
+        "solution": "https://leetcode.com/problems/symmetric-tree/discuss/33054/1-liner-Python-Ruby"
+      },
+      {
+        "problem": "Binary Tree Level Order Traversal",
+        "link": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+        "solution": "https://leetcode.com/problems/binary-tree-level-order-traversal/discuss/33514/10-lines-simple-Java-solution-using-Queue"
+      },
+      {
+        "problem": "Convert Sorted Array to Binary Search Tree",
+        "link": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
+        "solution": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/discuss/35218/Python-solution-with-detailed-explanation"
+      }
+    ],
+    "Dynamic Programming": [
+      {
+        "problem": "Climbing Stairs",
+        "link": "https://leetcode.com/problems/climbing-stairs/",
+        "solution": "https://leetcode.com/problems/climbing-stairs/discuss/25310/1-liner-3-liner-4-liner"
+      },
+      {
+        "problem": "Best Time to Buy and Sell Stock",
+        "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+        "solution": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/discuss/39060/A-stupid-question"
+      },
+      {
+        "problem": "Minimum Cost Climbing Stairs",
+        "link": "https://leetcode.com/problems/minimum-cost-climbing-stairs/",
+        "solution": "https://leetcode.com/problems/minimum-cost-climbing-stairs/discuss/361849/JavaC%2B%2BPython-DP-Solution"
+      }
+    ]
+  }
+  

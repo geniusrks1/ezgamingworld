@@ -1,0 +1,37 @@
+.menu{
+    width: 30%;
+    height: 210px;
+    background-color: lightblue;
+    position: absolute;
+    border-top: 1px solid black;
+    color: red;
+    font-weight: bold;
+   
+    
+}
+.head{
+    font-size: 1.1rem;
+    border-bottom: 1px solid black;
+}
+.unordered{
+    text-align: left;
+    
+    width: 70px
+}
+.lists{
+    list-style: none;
+    padding: 2px;
+    margin-left: -30px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    
+
+}
+.active{
+    list-style: none;
+    margin-left: -30px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #1877F2;
+    color: white;
+}

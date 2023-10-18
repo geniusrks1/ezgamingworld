@@ -1,0 +1,22 @@
+/* Htournament.module.css */
+.container {
+    margin: 20px;
+    padding: 0 100px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .col {
+    flex: 0 0 23%;
+    margin: 10px;
+  }
+  
+  .btn {
+    margin-top: 20px;
+    margin-left: 601px;
+  }
+  

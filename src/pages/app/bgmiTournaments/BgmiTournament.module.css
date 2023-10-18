@@ -1,0 +1,33 @@
+.cardcarousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 20px; */
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  
+  .cardimage {
+    width: 99.9vw;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .pagination {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .paginationdot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .paginationdot.active {
+    background-color: black;
+  }
+  

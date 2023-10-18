@@ -1,0 +1,66 @@
+
+
+/* ======================== */
+@media (max-width: 600px) {
+  .contact {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    background-color: black;
+    padding-bottom: 10px;
+  }
+  .contact .card2 {
+    margin: 0;
+  }
+
+  .contact .card2 h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+/* Contact.css */
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.contact li {
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+
+
+
+
+.h2{
+  color: #138781;
+  font-weight: bold;
+}
+
+
+.contact li a {
+  color: #007bff;
+  text-decoration: none;
+  transition: all 0.1s ease; 
+  transform-origin: center; 
+}
+
+.contact li a:hover {
+  color: green;
+  transform: scale(0.8); 
+}

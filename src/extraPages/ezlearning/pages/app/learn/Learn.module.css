@@ -1,0 +1,99 @@
+.courses_container {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* padding-block: 1rem; */
+  background-color: var(--clr-bg);
+}
+
+
+
+.back:hover {
+  color: var(--clr-accent);
+}
+
+.chapter_box {
+  display: flex;
+  color: var(--clr-text-main);
+  padding: 1rem;
+}
+
+.chapters {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--clr-bg-contrast);
+  border-radius: 0.5rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.chapter_box a {
+  text-decoration: none;
+  color: var(--clr-text-main);
+}
+
+.chapter_box a:hover {
+  color: var(--clr-accent);
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--clr-bg-contrast);
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.chapterId {
+  font-size: 1.2rem;
+  padding-top: 0.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+ 
+
+.top_head {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  color: var(--clr-text-main);
+  
+  background-color: var(--clr-bg-contrast);
+  border-radius: 0.5rem;
+  margin: 10px 0;
+  padding-left: 50px;
+}
+
+.backLink {
+  text-decoration: none;
+  color: #fff; 
+  display: flex;
+  align-items: center;
+}
+
+.back {
+  margin-right: 10px;
+  font-size: 24px;
+  /* margin-right: 1rem; */
+  cursor: pointer;
+  color: blue;
+  /* margin-top: 2rem; */
+  margin-top: 30px;
+}
+
+.heading {
+  font-size: 36px; 
+  margin: 0;
+  font-weight: bold;
+  display: flex;
+  padding-left: 100px;
+}
+

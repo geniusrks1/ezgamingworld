@@ -1,0 +1,74 @@
+{
+    "Arrays": [
+      {
+        "problem": "Merge Intervals",
+        "link": "https://leetcode.com/problems/merge-intervals/",
+        "solution": "https://leetcode.com/problems/merge-intervals/discuss/21222/A-simple-Java-solution"
+      },
+      {
+        "problem": "3Sum",
+        "link": "https://leetcode.com/problems/3sum/",
+        "video": "https://www.youtube.com/watch?v=TeegtfmEhTY"
+      },
+      {
+        "problem": "Product of Array Except Self",
+        "link": "https://leetcode.com/problems/product-of-array-except-self/",
+        "video": "https://www.youtube.com/watch?v=3X9-qs1Lwe4"
+      },
+      {
+        "problem": "Insert Delete GetRandom O(1)",
+        "link": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
+        "solution": "(Check the comment section of this post) https://leetcode.com/problems/insert-delete-getrandom-o1/discuss/85422/AC-C%2B%2B-Solution.-Unordered_map-%2B-Vector"
+      },
+      {
+        "problem": "Subarray Sum Equals K",
+        "link": "https://leetcode.com/problems/subarray-sum-equals-k/",
+        "solution": "https://leetcode.com/problems/subarray-sum-equals-k/discuss/341399/Python-Hashmap-explained."
+      },
+      {
+        "problem": "Container With Most Water",
+        "link": "https://leetcode.com/problems/container-with-most-water/",
+        "video": "https://www.youtube.com/watch?v=TI3e-17YAlc"
+      },
+      {
+        "problem": "Task Scheduler",
+        "link": "https://leetcode.com/problems/task-scheduler/",
+        "solution": "https://leetcode.com/problems/task-scheduler/discuss/104493/C%2B%2B-Java-Clean-Code-Priority-Queue"
+      }
+    ],
+    "Trees": [
+      {
+        "problem": "Binary Tree Inorder Traversal",
+        "link": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+        "solution": "https://leetcode.com/problems/binary-tree-inorder-traversal/discuss/31213/Iterative-solution-in-Java-simple-and-readable"
+      },
+      {
+        "problem": "Construct Binary Tree from Preorder and Postorder Traversal",
+        "link": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/",
+        "solution": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/discuss/34579/Concise-Java-solutions-O(N)-recursive-iterative"
+      },
+      {
+        "problem": "Serialize and Deserialize Binary Tree",
+        "link": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+        "solution": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/discuss/74252/Recursive-and-Iterative-Java-Solution"
+      }
+    ],
+    "Dynamic Programming": [
+      {
+        "problem": "Unique Paths",
+        "link": "https://leetcode.com/problems/unique-paths/",
+        "solution": "https://leetcode.com/problems/unique-paths/discuss/22954/C%2B%2B-DP"
+      },
+      {
+        "problem": "Coin Change",
+        "link": "https://leetcode.com/problems/coin-change/",
+        "solution": "https://leetcode.com/problems/coin-change/discuss/77372/C%2B%2B-O(n*amount)-space-DFS-solution"
+      },
+      {
+        "problem": "Longest Increasing Subsequence",
+        "link": "https://leetcode.com/problems/longest-increasing-subsequence/",
+        "solution": "https://leetcode.com/problems/longest-increasing-subsequence/discuss/74848/9-lines-C%2B%2B-O(NlogN)-Binary-Search-DP-solution-(beat-97.48)"
+      }
+    ]
+  }
+  

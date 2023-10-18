@@ -1,0 +1,27 @@
+{
+    "Trees": [
+      {
+        "problem": "Binary Tree Maximum Path Sum",
+        "link": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+        "solution": "https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/603423/Python-Bottom-Up-Recursion-Post-Order-Clean-code-O(N)"
+      },
+      {
+        "problem": "Serialize and Deserialize BST",
+        "link": "https://leetcode.com/problems/serialize-and-deserialize-bst/",
+        "solution": "https://leetcode.com/problems/serialize-and-deserialize-bst/discuss/93176/Java-Preorder-serialization-with-Deque"
+      }
+    ],
+    "Dynamic Programming": [
+      {
+        "problem": "Regular Expression Matching",
+        "link": "https://leetcode.com/problems/regular-expression-matching/",
+        "solution": "https://leetcode.com/problems/regular-expression-matching/discuss/5684/9-lines-16ms-c%2B%2B-recursive-iterative-dp"
+      },
+      {
+        "problem": "Wildcard Matching",
+        "link": "https://leetcode.com/problems/wildcard-matching/",
+        "solution": "https://leetcode.com/problems/wildcard-matching/discuss/17810/Linear-runtime-and-constant-space-solution"
+      }
+    ]
+  }
+  
