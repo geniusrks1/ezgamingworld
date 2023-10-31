@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Tooltip from './Tooltip';
+import { GrTooltip } from 'react-icons/gr';
 
 const TooltipHome = () => {
   const [selectedPosition, setSelectedPosition] = useState('top'); // Default position is 'top'
@@ -31,6 +32,11 @@ const TooltipHome = () => {
     color: '#333',
     textDecoration: 'underline dotted',
   };
+
+  useEffect(()=>{
+    document.title="Tooltip";
+    document.querySelector('link[rel="icon"]').setAttribute('href', GrTooltip());
+},[])
 
   return (
     <div style={containerStyle}>
