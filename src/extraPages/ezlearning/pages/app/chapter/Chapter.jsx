@@ -19,8 +19,8 @@ function Chapter() {
       <p className={styles.para}>{chapter.details}</p>
       <br />
       <br />
-      <div className={styles.videos}>
-        {/*TASK:5 CHAPTER VIDEO SRC SHOULD BE GIVEN IN THE SOURCE */}
+      {/* <div className={styles.videos}>
+       
         <iframe
           width="800"
           height="560"
@@ -30,7 +30,34 @@ function Chapter() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-      </div>
+      </div> */}
+
+<div>
+
+{chapter.easy.map((problem, index) => {
+  return(
+        <div className={styles.column} key={index}>
+          <div className={styles.number_column}>{index + 1}</div>
+          <div className={styles.problem_column}>{problem.problem}</div>
+          <a className={`${styles.button} ${styles.practice_button}`} href={problem.link} target="_blank" rel="noopener noreferrer">
+            Practice
+          </a>
+         
+            <a className={`${styles.button} ${styles.solution_button}`} href={problem.solution} target="_blank" rel="noopener noreferrer">
+              Solution
+            </a>
+         
+        </div>
+  );
+  }
+  )}
+
+
+
+</div>
+
+
+
     </div>
   );
 }

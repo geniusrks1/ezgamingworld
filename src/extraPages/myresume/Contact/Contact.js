@@ -11,7 +11,8 @@ return(
 
 <>
 <div className='contact-container'>
-<h2 className="col-12 mt-3 mb-1 text-center text-uppercase h2">
+<h2 className="col-12 mt-3 mb-1 text-center text-uppercase h2"
+style={{color:"green"}}>
     Contact
 </h2>
 <ul className='contact' >

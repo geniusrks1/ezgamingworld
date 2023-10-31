@@ -28,7 +28,9 @@ function Courses() {
               </Link>
             </div>
           );
-        })}
+        }
+        )
+        }
       </div>
     </div>
    

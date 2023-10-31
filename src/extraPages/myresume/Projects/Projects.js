@@ -14,16 +14,25 @@ const Projects = () => {
          My Recent Work
         </p>
         {/* card design */}
+
+
+
         <div className="row" id="ads">
           <Spin>
             <div className="col-md-4">
               <div className="card rounded">
                 <div className="card-image">
                   <span className="card-notify-badge">FullStack</span>
+                  <Link
+                   
+                    to="../expensetracker"
+                    target="_blank"
+                  >
                   <img
                     src="./static/expense-tracker.jpg"
                     alt="project1"
                   />
+                      </Link>
                 </div>
                 <div className="card-image-overly m-auto mt-3">
                   <span className="card-detail-badge">ReactJs</span>
@@ -46,14 +55,32 @@ const Projects = () => {
                 </div>
               </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            
             <div className="col-md-4">
               <div className="card rounded">
                 <div className="card-image">
                   <span className="card-notify-badge">FullStack</span>
+                  <Link
+                    to="https://ecommerceapp-ly7b.onrender.com/"
+                    target="_blank"
+                  >
                   <img
                     src="./static/e-comerce.jpg"
                     alt="project2"
                   />
+                  </Link>
                 </div>
                 <div className="card-image-overly m-auto mt-3">
                   <span className="card-detail-badge">Nodejs</span>
@@ -74,23 +101,30 @@ const Projects = () => {
                 </div>
               </div>
             </div>
+            
 
 
 
 
 
 
-
-
+           
 
             <div className="col-md-4">
               <div className="card rounded">
                 <div className="card-image">
                   <span className="card-notify-badge">Backend</span>
+                  <Link
+                  to="https://ezchatapp.onrender.com/"
+                  target="_blank"
+                   >
                   <img
                     src="./static/chat-app.jpg"
                     alt="project1"
                   />
+               </Link>
+
+
                 </div>
                 <div className="card-image-overly m-auto mt-3">
                   <span className="card-detail-badge">Node</span>
@@ -116,35 +150,49 @@ const Projects = () => {
 
 
 
+
+
+
+
+
+
+
             <div className="col-md-4">
               <div className="card rounded">
                 <div className="card-image">
                   <span className="card-notify-badge">Ipod</span>
+                 
+            <Link 
+              to="https://ezgamingworld.com/ipod"
+              target="_blank">
+                 
                   <img
                     src="./static/ipod.jpg"
                     alt="project1"
                   />
+                   </Link>
                 </div>
                 <div className="card-image-overly m-auto mt-3">
                   <span className="card-detail-badge">ReactJs</span>
                 </div>
                 <div className="card-body text-center">
                   <div className="ad-title m-auto">
-                    <h6 className="text-uppercase">mp3 player</h6>
+                    <h6 className="text-uppercase"
+                    style={{color:"black"}}
+                    >mp3 player</h6>
                   </div>
-
                   <Link
-                   className="ad-btn"
+                   className="ad-btn btn"
                    to="https://ezgamingworld.com/ipod"
                    target="_blank"
                     >
-                    View
+                   View
                   </Link>
+                 
                 </div>
               </div>
             </div>
-
-
+           
 
 
 

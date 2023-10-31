@@ -126,19 +126,152 @@
             "chapter": 1,
             "title": "Introduction",
             "description": "Introduction to Data Structures and Algorithms",
-            "details": "Overview of basic concepts in data structures and algorithms."
-          },
+            "details": "Overview of basic concepts in data structures and algorithms." 
+        },
           {
             "chapter": 2,
             "title": "Arrays",
             "description": "Arrays in DSA",
-            "details": "Study of arrays, their properties, and various algorithms related to arrays."
-          },
+            "details": "Study of arrays, their properties, and various algorithms related to arrays.",
+            "easy": [
+            {
+              "problem": "Two Sum",
+              "link": "https://leetcode.com/problems/two-sum/",
+              "video": "https://www.youtube.com/watch?v=o2WOhGSfx_8"
+            },
+            {
+              "problem": "Best Time to Buy and Sell Stock",
+              "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+              "video": "https://www.youtube.com/watch?v=XIWykOHE1SE"
+            },
+            {
+              "problem": "Plus One",
+              "link": "https://leetcode.com/problems/plus-one/",
+              "video": "https://www.youtube.com/watch?v=FyzWXlSMNoI"
+            },
+            {
+              "problem": "Move Zeroes",
+              "link": "https://leetcode.com/problems/move-zeroes/",
+              "video": "https://www.youtube.com/watch?v=mgzcjQ1x9Mw"
+            },
+            {
+              "problem": "Best Time to Buy and Sell Stock II",
+              "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/",
+              "video": "https://www.youtube.com/watch?v=3gtcRtvDCpA"
+            },
+            {
+              "problem": "Running Sum of 1d Array",
+              "link": "https://leetcode.com/problems/running-sum-of-1d-array/",
+              "solution": "https://leetcode.com/problems/running-sum-of-1d-array/discuss/686261/JavaC%2B%2BPython-Array-Time-O(N)-Space-O(1)"
+            },
+            {
+              "problem": "Find Pivot Index",
+              "link": "https://leetcode.com/problems/find-pivot-index/",
+              "solution": "https://leetcode.com/problems/find-pivot-index/discuss/411318/Java%3A-beats100-1ms-easy-understanding-solution"
+            },
+            {
+              "problem": "Majority Element",
+              "link": "https://leetcode.com/problems/majority-element/",
+              "video": "https://www.youtube.com/watch?v=PqU48t80rn8"
+            },
+            {
+              "problem": "Fibonacci Number",
+              "link": "https://leetcode.com/problems/fibonacci-number/",
+              "video": "https://www.youtube.com/watch?v=MyFe2W2nIEE&list=PLKZaSt2df1gxtem7J8QqY8m2bHliz8mPt"
+            },
+            {
+              "problem": "Squares of a Sorted Array",
+              "link": "https://leetcode.com/problems/squares-of-a-sorted-array/",
+              "solution": "https://leetcode.com/problems/squares-of-a-sorted-array/discuss/495394/C%2B%2B%3A-Simplest-one-pass-two-pointers"
+            },
+            {
+              "problem": "Pascal's Triangle",
+              "link": "https://leetcode.com/problems/pascals-triangle/",
+              "solution": "https://leetcode.com/problems/pascals-triangle/discuss/38125/Solution-in-Java"
+            },
+            {
+              "problem": "Remove Duplicates from Sorted Array",
+              "link": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+              "solution": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/discuss/11782/Share-my-clean-C%2B%2B-code"
+            }
+          ],
+          "medium":[
+            {
+              "problem": "Merge Intervals",
+              "link": "https://leetcode.com/problems/merge-intervals/",
+              "solution": "https://leetcode.com/problems/merge-intervals/discuss/21222/A-simple-Java-solution"
+            },
+            {
+              "problem": "3Sum",
+              "link": "https://leetcode.com/problems/3sum/",
+              "video": "https://www.youtube.com/watch?v=TeegtfmEhTY"
+            },
+            {
+              "problem": "Product of Array Except Self",
+              "link": "https://leetcode.com/problems/product-of-array-except-self/",
+              "video": "https://www.youtube.com/watch?v=3X9-qs1Lwe4"
+            },
+            {
+              "problem": "Insert Delete GetRandom O(1)",
+              "link": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
+              "solution": "(Check the comment section of this post) https://leetcode.com/problems/insert-delete-getrandom-o1/discuss/85422/AC-C%2B%2B-Solution.-Unordered_map-%2B-Vector"
+            },
+            {
+              "problem": "Subarray Sum Equals K",
+              "link": "https://leetcode.com/problems/subarray-sum-equals-k/",
+              "solution": "https://leetcode.com/problems/subarray-sum-equals-k/discuss/341399/Python-Hashmap-explained."
+            },
+            {
+              "problem": "Container With Most Water",
+              "link": "https://leetcode.com/problems/container-with-most-water/",
+              "video": "https://www.youtube.com/watch?v=TI3e-17YAlc"
+            },
+            {
+              "problem": "Task Scheduler",
+              "link": "https://leetcode.com/problems/task-scheduler/",
+              "solution": "https://leetcode.com/problems/task-scheduler/discuss/104493/C%2B%2B-Java-Clean-Code-Priority-Queue"
+            }
+          ],
+          "hard":[
+            {
+              "problem": "First Missing Positive",
+              "link": "https://leetcode.com/problems/first-missing-positive/",
+              "solution": "https://leetcode.com"
+            },
+            {
+              "problem": "Largest Rectangle in Histogram",
+              "link": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+              "solution": "https://leetcode.com"
+            },
+            {
+              "problem": "Insert Delete GetRandom O(1) - Duplicates Allowed",
+              "link": "https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/",
+              "solution": "https://leetcode.com"
+            },
+            {
+              "problem": "Best Time to Buy and Sell Stock III",
+              "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
+              "solution": "https://leetcode.com"    
+            },
+            {
+              "problem": "Max Value of Equation",
+              "link": "https://leetcode.com/problems/max-value-of-equation/",
+              "solution":"https://leetcode.com"
+            }
+          ]
+          
+        },
           {
             "chapter": 3,
             "title": "Recursion",
             "description": "Recursion in DSA",
-            "details": "Understanding recursion and recursive algorithms."
+            "details": "Understanding recursion and recursive algorithms.",
+            "easy": [
+                {
+                  "problem": "Two Sum",
+                  "link": "https://leetcode.com/problems/two-sum/",
+                  "video": "https://www.youtube.com/watch?v=o2WOhGSfx_8"
+                }]
           },
           {
             "chapter": 4,

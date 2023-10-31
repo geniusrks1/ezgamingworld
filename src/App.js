@@ -26,6 +26,14 @@ import Courses from "./extraPages/ezlearning/pages/app/courses/Courses";
 import Details from "./extraPages/ezlearning/pages/app/details/Details";
 import Learn from "./extraPages/ezlearning/pages/app/learn/Learn";
 import Chapter from './extraPages/ezlearning/pages/app/chapter/Chapter'
+import LiveCricHome from "./extraPages/livecricketscores/LiveCricHome";
+import Services from './extraPages/services/components/Home/Home'
+import ToDo from './extraPages/services/components/TodoHome/TodoHome'
+import Note from './extraPages/services/components/NoteHome/NoteHome'
+import ECnavBar from './extraPages/Ecommerce/Components/Navbar/Navbar'
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
+import TooltipHome from "./extraPages/ToolTip/TooltipHome";
 function App() {
   const browserRouter=createBrowserRouter(
     [
@@ -165,6 +173,29 @@ function App() {
 
 
   ]
+},
+{
+  path:"cricscore",
+  element:<LiveCricHome/>
+}
+,
+{
+  path:"services",
+  element:<Services/>
+},{
+  path:"todo",
+  element:<ToDo/>
+},{
+  path:"notes",
+  element:<Note/>
+},
+{
+  path:"ecommerce",
+  element:<ECnavBar/>
+},
+{
+  path:"tooltip",
+  element:<TooltipHome/>
 }
 
   ])
@@ -172,7 +203,9 @@ function App() {
 
   return (
     <>
+     <Provider store={store}>
      <RouterProvider router={browserRouter}/>
+     </Provider>
     </>
   );
 }

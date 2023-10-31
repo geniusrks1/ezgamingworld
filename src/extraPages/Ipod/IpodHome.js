@@ -1,7 +1,19 @@
 
 import React from 'react';
+
 import Ipod from './Ipodcomponents/Ipod';
 class App extends React.Component {
+
+  componentDidMount() {
+    document.title = "Ipod";
+    document.querySelector('link[rel="icon"]').setAttribute('href', 'ipod-favicon.png');
+  }
+
+
+
+
+
+
   render() {
     const style1 = {
       textAlign: 'center',
@@ -10,8 +22,6 @@ class App extends React.Component {
       paddingLeft: '10%',
       marginInline: 'auto',
       marginTop: '80px',
-      /* reflection effect */
-      /* -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4)); */
     }
 
     return (
@@ -23,22 +33,6 @@ class App extends React.Component {
     )
   }
 }
-
-
-
-
-// const style=  code {
-//     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-//       monospace;
-//   }
-
-
-
-
-
-
-
-
 
 
 export default App;

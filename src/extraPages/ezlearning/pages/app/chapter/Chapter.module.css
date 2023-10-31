@@ -8,3 +8,52 @@
     display: flex;
     justify-content: space-around;
 }
+
+
+
+/* Define styles for the columns */
+.column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the problem number column */
+  .number_column {
+    width: 50px;
+    text-align: center;
+  }
+  
+  /* Style for the problem name column */
+  .problem_column {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  /* Style for the buttons */
+  .button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Style for the 'Practice' button */
+  .practice_button {
+    background-color: #4caf50;
+  }
+  
+  /* Style for the 'Solution' button */
+  .solution_button {
+    background-color: #008CBA;
+  }
+  
