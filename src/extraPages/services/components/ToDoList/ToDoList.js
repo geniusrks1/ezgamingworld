@@ -26,7 +26,7 @@ const ToDoList = () => {
 
 
         disptach(getInitialState());
-      }, []);
+      });
 
     //   useEffect(() => {
     //     fetch("http://localhost:4100/api/todos")

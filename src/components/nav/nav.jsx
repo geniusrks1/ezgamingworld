@@ -25,7 +25,7 @@ const Nav = () => {
         <li> <NavLink to=''>Home</NavLink></li>
         <li> <NavLink to='bgmitournaments'>BGMI</NavLink></li>
         <li>FreeFire</li>
-        <li><NavLink to='services'>Services</NavLink></li>
+       
         <li>Features</li>
       </ul>
     </nav>

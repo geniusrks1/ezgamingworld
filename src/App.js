@@ -1,7 +1,7 @@
 import Nav from "./components/nav/nav";
 import Page404 from "./pages/page404/Page404";
 import Home from './pages/app/home/Home'
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Navigate, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Games from "./pages/app/games/Games";
 import Tournaments from "./pages/app/tournaments/Tournaments";
 import Bgmi from "./pages/app/bgmi/Bgmi";
@@ -31,10 +31,27 @@ import Services from './extraPages/services/components/Home/Home'
 import ToDo from './extraPages/services/components/TodoHome/TodoHome'
 import Note from './extraPages/services/components/NoteHome/NoteHome'
 import ECnavBar from './extraPages/Ecommerce/Components/Navbar/Navbar'
-import { Provider } from "react-redux";
-import { store } from "./redux/store";
+import {  useDispatch, useSelector } from "react-redux";
 import TooltipHome from "./extraPages/ToolTip/TooltipHome";
+import Login from "./extraPages/Ecommerce/Components/Login/Login";
+import SignUp from "./extraPages/Ecommerce/Components/Login/SignUp";
+import { authentication, userSelector } from "./redux/reducer/UserReducer";
+import { useEffect } from "react";
+import EChome from './extraPages/Ecommerce/Components/Home/EChome'
+import ECmyorders from './extraPages/Ecommerce/Components/Orders/ECmyorders'
+import ECcart from './extraPages/Ecommerce/Components/Cart/ECcart'
+
+
+
+
+
+
 function App() {
+
+const {user}=useSelector(userSelector);
+const dispatch=useDispatch();
+
+
   const browserRouter=createBrowserRouter(
     [
       {
@@ -191,8 +208,39 @@ function App() {
 },
 {
   path:"ecommerce",
-  element:<ECnavBar/>
+  element:<ECnavBar/>,
+  children:[
+    {
+      index:true,
+      element:<EChome/>
+    },{
+      path:'orders',
+      element:user? <ECmyorders/> : <Navigate to='/ecommerce/signin'/>
+    },
+    {
+      path:'cart',
+      element:user?<ECcart/>: <Navigate to='/ecommerce/signin'/>
+    }
+    ,
+    {
+      path:'signin',
+      element:<Login/>
+    },
+    {
+      path:'signup',
+      element:<SignUp/>
+    }
+  ]
 },
+// {
+//   path:"signin",
+//   element:<Login/>
+// },
+// {
+//   path:"signup",
+//   element:<SignUp/>
+// }
+// ,
 {
   path:"tooltip",
   element:<TooltipHome/>
@@ -200,12 +248,17 @@ function App() {
 
   ])
 
+ 
+  useEffect(() => {
+    dispatch(authentication());
+   },[])
+
 
   return (
     <>
-     <Provider store={store}>
+    
      <RouterProvider router={browserRouter}/>
-     </Provider>
+    
     </>
   );
 }

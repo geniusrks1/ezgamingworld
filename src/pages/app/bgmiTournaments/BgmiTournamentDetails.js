@@ -7,7 +7,10 @@ const BgmiTournamentDetails = () => {
 
   return (
     <>
-    <img src={card.imageUrl} alt={card.title}/>
+    <div>
+
+    </div>
+    {/* <img src={card.imageUrl} alt={card.title}/> */}
     
     </>
   )

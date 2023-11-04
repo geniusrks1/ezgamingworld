@@ -1,11 +1,11 @@
 
 
 .container{
-    
     display: flex;
     height: 100vh;
     justify-content: space-around;
     align-items: center;
+ 
 }
 
 .link{
@@ -18,3 +18,41 @@
     height: 200px;
     width: 200px;
 }
+
+
+
+.floatingButtonContainer {
+    position: fixed;
+    bottom: 50vh;
+    left: 1rem;
+    z-index: 999;
+  }
+  
+  .floatingButton {
+    width: 90px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    transform: scale(.8);
+    background-color: green;
+  }
+  
+
+
+
+  .floatingButton:hover {
+    transform: scale(.9);
+  }
+  
+
+  @media screen and (max-width: 700px){
+    .container{
+      margin-top: 25rem;
+      padding: 10px;
+    }
+    
+  }
