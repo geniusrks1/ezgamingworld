@@ -3,15 +3,19 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+    padding: 1rem 2rem; /* Adjust padding for better spacing */
+    text-align: center; /* Center-align content */
   }
   
   .container h2{
     color: whitesmoke;
+    margin-bottom: 1.5rem; /* Add space between title and cards */
   }
   .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 -10px; /* Remove default margin for better alignment */
   }
   
   .col {
@@ -22,16 +26,23 @@
   .btn {
     margin-top: 20px;
     margin-left: 601px;
+    margin-top: 1.5rem; /* Adjust margin-top for better spacing */
+    margin-left: auto; /* Center-align the button */
+    margin-right: auto;
+    display: block; /* Ensure button takes full width */
   }
   
 @media (max-width: 768px) {
   .col {
     flex: 1 1 100%;
     max-width: 100%;
+    
+    margin: 10px 0; /* Adjust margin for better spacing */
   }
 
   .btn {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+
   }
 
   

@@ -58,7 +58,7 @@
   transition: all 1s ease;
 }
 
-.ad-btn {
+.resume-ad-btn {
   text-transform: uppercase;
   width: 150px;
   height: 40px;
@@ -75,7 +75,7 @@
   position: relative;
 }
 
-.ad-btn:hover {
+.resume-ad-btn:hover {
   background-color: white;
   color: #138781;
   background: transparent;

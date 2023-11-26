@@ -5,7 +5,11 @@ import TodoForm from '../ToDoForm/TodoForm'
 
 const TodoHome = () => {
   return (
-    <>      <div style={{backgroundColor:"white"}}>
+    <>      <div style={{
+      backgroundColor:"white",
+      width:"100vw",
+      height:"100vh"
+      }}>
              <NavBar />
              <h1>To Dos</h1>
               <TodoForm  />

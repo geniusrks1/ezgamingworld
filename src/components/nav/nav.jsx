@@ -17,7 +17,8 @@ const Nav = () => {
   return (
     <>
 <nav className={styles.navbar}>
-      <div><SiYoutubegaming/> </div>
+      {/* <div><SiYoutubegaming/> </div> */}
+      <div className={styles.logo}><img src='./static/ezlogo.png'/> </div>
       <button className={styles.toggleButton} onClick={toggleNavbar}>
        <FaBars/>
       </button>

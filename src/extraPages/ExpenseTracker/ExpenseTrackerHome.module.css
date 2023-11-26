@@ -33,3 +33,47 @@
        --input-height: 2rem;
      }
     
+
+.view{
+  display: none;
+}
+/* Media query for small screens (up to 767px width) */
+@media screen and (max-width: 767px) {
+  .expensetracker h4 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+ .expenseContainer {
+     display: flex;
+    flex-direction: row;
+      align-items: center;
+   /* justify-content: end; */
+     margin: .12rem ;
+      width: 90vw;
+   
+  }
+    
+.mainHeading {
+     text-align: center;
+      margin-top: 2rem;
+     }
+  
+ .trackerApp {
+       font-family: "Lato", sans-serif;
+   
+      width: 100px;;
+     }
+     .view{
+font-size: .7rem;
+display: block;
+     }
+}
+
+
+
+
+
+
+
+

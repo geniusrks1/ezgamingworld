@@ -32,7 +32,7 @@ useEffect(() => {
       navigate('/');
     }
   }
-}, [user, currentPath, navigate]);
+}, [user,currentPath, navigate]);
 
 
 

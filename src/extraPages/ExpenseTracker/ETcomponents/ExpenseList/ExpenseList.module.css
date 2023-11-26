@@ -22,3 +22,30 @@
     list-style: none;
   }
   
+  @media screen and (max-width:767px){
+    .expenseListContainer {
+      text-align: left;
+      width: 35vw;
+      padding-left: 10px;
+      margin-left: 5px;
+    }
+    
+    .expenseListContainer h3 {
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #dedede;
+      margin-bottom: 1rem;
+    }
+    
+    .transactionList {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      height: 100%;
+    }
+    
+    .transactionList li {
+      list-style: none;
+    }
+  }

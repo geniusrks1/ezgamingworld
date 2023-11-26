@@ -19,17 +19,24 @@ const Projects = () => {
 
         <div className="row" id="ads">
           <Spin>
+
+
+
+
+
+
+
             <div className="col-md-4">
               <div className="card rounded">
                 <div className="card-image">
-                  <span className="card-notify-badge">FullStack</span>
+                  <span className="card-notify-badge">ECOMMERCE</span>
                   <Link
                    
-                    to="../expensetracker"
+                    to="../ecommerce"
                     target="_blank"
                   >
                   <img
-                    src="./static/expense-tracker.jpg"
+                    src="./static/resume/ecommerce.jpg"
                     alt="project1"
                   />
                       </Link>
@@ -46,7 +53,7 @@ const Projects = () => {
                     </h6>
                   </div>
                   <Link
-                    className="ad-btn"
+                    className="resume-ad-btn"
                     to="../expensetracker"
                     target="_blank"
                   >
@@ -92,7 +99,7 @@ const Projects = () => {
                     <h6 className="text-uppercase">E-commerce App</h6>
                   </div>
                   <Link
-                    className="ad-btn"
+                    className="resume-ad-btn"
                     to="https://ecommerceapp-ly7b.onrender.com/"
                     target="_blank"
                   >
@@ -102,6 +109,45 @@ const Projects = () => {
               </div>
             </div>
             
+
+
+
+            <div className="col-md-4">
+              <div className="card rounded">
+                <div className="card-image">
+                  <span className="card-notify-badge">FullStack</span>
+                  <Link
+                   
+                    to="../expensetracker"
+                    target="_blank"
+                  >
+                  <img
+                    src="./static/expense-tracker.jpg"
+                    alt="project1"
+                  />
+                      </Link>
+                </div>
+                <div className="card-image-overly m-auto mt-3">
+                  <span className="card-detail-badge">ReactJs</span>
+                  <span className="card-detail-badge">Firebase</span>
+                 
+                </div>
+                <div className="card-body text-center">
+                  <div className="ad-title m-auto">
+                    <h6 className="text-uppercase">
+                     Expense Tracker Website
+                    </h6>
+                  </div>
+                  <Link
+                   className="resume-ad-btn"
+                    to="../expensetracker"
+                    target="_blank"
+                  >
+                    View
+                  </Link>
+                </div>
+              </div>
+            </div>
 
 
 
@@ -138,7 +184,7 @@ const Projects = () => {
                   </div>
 
                   <Link
-                   className="ad-btn"
+                   className="resume-ad-btn"
                    to="https://ezchatapp.onrender.com/"
                    target="_blank"
                     >
@@ -182,7 +228,7 @@ const Projects = () => {
                     >mp3 player</h6>
                   </div>
                   <Link
-                   className="ad-btn btn"
+                  className="resume-ad-btn"
                    to="https://ezgamingworld.com/ipod"
                    target="_blank"
                     >

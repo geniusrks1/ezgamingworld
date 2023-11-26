@@ -1,0 +1,118 @@
+/* Example styles for the app */
+.App {
+    text-align: center;
+    /* margin-top: 50px; */
+    background-color: azure;
+  }
+  
+  .h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .todo_list {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+ 
+
+  /* TodoItem.module.css */
+.todo_item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.todo_item:hover {
+  transform: translateY(-3px);
+}
+
+.todo_item span {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.todo_item button {
+  padding: 8px 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.todo_item button.edit_button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.todo_item button.edit_button:hover {
+  background-color: #45a049;
+}
+
+.todo_item button.delete_button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.todo_item button.delete_button:hover {
+  background-color: #e53935;
+}
+
+
+
+/* TodoForm.module.css */
+.form_container {
+  display: flex;
+  /* align-items: center; */
+  /* margin-bottom: 20px; */
+  /* margin:100px auto; */
+  justify-content: center;
+
+}
+
+.form_container input[type="text"] {
+  width: 22rem;
+  height: 3.5rem;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form_container input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+.form_container button {
+  padding: 10px 15px;
+  margin-left: -90px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: lightgreen;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  height: 3.5rem;
+  position: relative;
+  left: 30px;
+  top: -31.5px;
+}
+
+.form_container button:hover {
+  background-color: #45a049;
+}
+
+.currentTime {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  background-color: #ccc;
+}

@@ -120,14 +120,20 @@ function ExpenseTrackerHome() {
     <>
       <ToastContainer />
       <div className={styles.expensetracker}>
-      <h2 className={styles.mainHeading}>Expense Tracker</h2>
-      <div className="App">
+      <h2 className={styles.mainHeading}>Expense Tracker
+      <div className={styles.view}>
+        (Better view use desktop mode)</div>
+      </h2>
+      <div className={`App ${styles.app}`}>
+        <div>
         <ExpenseForm
           addExpense={addExpense}
           expenseToUpdate={expenseToUpdate}
           updateExpense={updateExpense}
           resetExpenseToUpdate={resetExpenseToUpdate}
+          className={styles.form}
         />
+        </div>
       <div className={styles.expenseContainer}>
           <ExpenseInfo expenses={state.expenses} />
           <ExpenseList

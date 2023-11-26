@@ -40,6 +40,29 @@ const Home = () => {
           </NavLink>
         </div>
 
+
+
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+          <NavLink to='/ShoppingCart' className={`btn btn-warning btn-lg w-100 ${styles.link}`}>
+        ContextApi-ShoppingCart
+          </NavLink>
+        </div>
+
+
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+          <NavLink to='/postkeeperApp' className={`btn btn-warning btn-lg w-100 ${styles.link}`}>
+        ContextApi-PostKeeper App
+          </NavLink>
+        </div>
+
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+          <NavLink to='/DialectoApp' className={`btn btn-warning btn-lg w-100 ${styles.link}`}>
+        ContextApi-Dialecto App
+          </NavLink>
+        </div>
+
+
+
         <div className={styles.floatingButtonContainer}>
         <button
           className={`btn btn-primary ${styles.floatingButton}`}

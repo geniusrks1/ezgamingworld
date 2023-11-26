@@ -2,21 +2,60 @@
 .container {
     margin: 20px;
     padding: 0 100px;
+    max-width: 1200px; /* Set a maximum width */
+    margin: 0 auto; /* Center-align container */
+    padding: 20px; /* Increase padding for better spacing */
+    text-align: center; /* Center-align content */
   }
   
+  .container h2 {
+   
+  
+    /* Enhancements */
+    color: whitesmoke; /* Moved color property from h2 to container */
+    margin-bottom: 1.5rem; /* Add space between title and cards */
+  }
   .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 -10px;
   }
   
   .col {
     flex: 0 0 23%;
     margin: 10px;
+
+ 
   }
   
   .btn {
+
     margin-top: 20px;
     margin-left: 601px;
+    background-color: violet;
+
+   
   }
   
+
+
+  /* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .col {
+    /* Keep existing styles */
+
+    /* Enhancements */
+    flex: 1 1 100%; /* Occupy almost half the width */
+    margin: 10px 0; /* Adjust margin for better spacing */
+  }
+
+  .btn {
+    /* Enhancements */
+    margin-top: 1.5rem; /* Adjust margin-top for better spacing */
+    margin-left: auto; /* Center-align the button */
+    margin-right: auto;
+    background-color: violet;
+    display: block; /* Ensure button takes full width */
+  }
+}

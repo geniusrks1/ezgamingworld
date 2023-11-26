@@ -1,0 +1,78 @@
+/* card.module.css */
+
+/* General styles for the card container */
+.card {
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 8px; /* Round corners */
+    overflow: hidden; /* Hide overflowing content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #fff; /* Set a white background */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Add a slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
+  
+  /* Styles for the image inside the card */
+  .card_img_top {
+    width: 100%;
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd; /* Add a border at the bottom of the image */
+  }
+  
+  /* Styles for the card body */
+  .card_body {
+    padding: 1rem; /* Add padding inside the card body */
+  }
+  
+  /* Styles for the title */
+  .card_title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem; /* Add space below the title */
+  }
+  
+  /* Styles for the description */
+  .card_text {
+    color: #666;
+  }
+  
+  /* Styles for the button inside the card */
+  .button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 20px; /* Add some space between cards on smaller screens */
+    }
+
+
+    .button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        background-color: #007bff; /* Button background color */
+        color: #fff; /* Button text color */
+        border-radius: 4px;
+        margin-top: 0.5rem;
+        transition: background-color 0.3s ease-in-out;
+      }
+  }
+  

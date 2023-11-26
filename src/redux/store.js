@@ -8,6 +8,7 @@ import {productsReducer} from './reducer/ProductsReducer'
 import {cartReducer} from './reducer/CartReducer'
 import {ordersReducer} from './reducer/OrdersReducer'
 import {filterReducer} from './reducer/FilterReducers'
+import { formDataReducer } from "./reducer/BgmiTournament/FormDataReducer";
 
 export const store=configureStore({
     reducer:{
@@ -18,7 +19,9 @@ export const store=configureStore({
         productsReducer,
         cartReducer,
         ordersReducer,
-        filterReducer
+        filterReducer,
+        formDataReducer,
+      
     },
     middleware:[...getDefaultMiddleware(),loggerMiddleware]
 });

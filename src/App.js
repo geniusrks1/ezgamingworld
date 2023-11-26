@@ -40,6 +40,10 @@ import { useEffect } from "react";
 import EChome from './extraPages/Ecommerce/Components/Home/EChome'
 import ECmyorders from './extraPages/Ecommerce/Components/Orders/ECmyorders'
 import ECcart from './extraPages/Ecommerce/Components/Cart/ECcart'
+import TODOList from "./extraPages/SkillTest/todolist/TodoApp"
+import ShoppingCartApp from "./extraPages/codingninjapractice/contextApi/shoppingCart/ShoppingCartApp";
+import PostKeeperApp from "./extraPages/codingninjapractice/contextApi/postKeeper/PostKeeperApp";
+import AppRoot from './extraPages/codingninjapractice/contextApi/DialectoApp/AppRoot';
 
 
 
@@ -244,6 +248,22 @@ const dispatch=useDispatch();
 {
   path:"tooltip",
   element:<TooltipHome/>
+},
+
+{
+  path:"todolist",
+  element:<TODOList/>
+},
+{
+  path:'ShoppingCart',
+  element:<ShoppingCartApp/>
+},
+{
+  path:'postKeeperApp',
+  element:<PostKeeperApp/>
+},{
+  path:'dialectoApp',
+  element:<AppRoot/>
 }
 
   ])
@@ -251,7 +271,7 @@ const dispatch=useDispatch();
  
   useEffect(() => {
     dispatch(authentication());
-   },[])
+   },[dispatch])
 
 
   return (
