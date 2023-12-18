@@ -1,8 +1,22 @@
 import React from "react";
 import style from "./Nav.module.css";
-import { Link, NavLink, Outlet } from "react-router-dom";
-
+import { Link, NavLink, Outlet} from "react-router-dom";
+import { userSelector ,signout, signInWithGoogle} from "../../../../redux/reducer/UserReducer";
+import {  useDispatch, useSelector } from 'react-redux';
 function Nav() {
+  const{user }=useSelector(userSelector)
+  const dispatch=useDispatch();
+
+
+const handleLoginClick=()=>{
+if(user){
+  dispatch(signout());
+}
+else{
+  dispatch(signInWithGoogle());
+}
+
+  }
   return (
     <>
     <nav className={style.nav}>
@@ -22,6 +36,12 @@ function Nav() {
          <NavLink to='courses'>
           {({ isActive })=>( isActive ? "Courses" : "Go To Courses")}
          </NavLink>
+         </button>
+          <button 
+           onClick={handleLoginClick}>
+
+       {user?  "Logout":"Login"}
+         
          </button>
         </div>
       </div>

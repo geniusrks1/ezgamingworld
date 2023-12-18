@@ -1,0 +1,69 @@
+
+/* Styles for the form */
+.form {
+    background-color: #cf2c2c;
+    padding: 10px; /* Further reduced padding */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for the form headings */
+  .form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px; /* Further reduced margin */
+    font-size: 18px; /* Reduced font size */
+  }
+  
+  /* Styles for form labels */
+  .form label {
+    display: block;
+    margin-top: 6px; /* Further reduced margin */
+    font-size: 14px; /* Reduced font size */
+  }
+  
+  /* Styles for form inputs */
+  .form input {
+    width: 100%;
+    padding: 6px; /* Retained padding */
+    margin-top: 4px; /* Retained margin */
+    box-sizing: border-box;
+    font-size: 14px; /* Reduced font size */
+  }
+  
+  /* Style the submit button */
+  .form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 12px; /* Retained padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 8px; /* Retained margin */
+    font-size: 16px; /* Retained font size */
+  }
+  
+  /* Add some spacing between elements */
+  .form br {
+    margin-bottom: 6px; /* Further reduced margin */
+  }
+  
+  
+  .div_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    right:500px;
+  }
+
+  .imageContainerform{
+    position: relative;
+    left:300px;
+    top: -40px;
+  }
+  .form{
+    position: relative;
+    left: 200px;
+  }

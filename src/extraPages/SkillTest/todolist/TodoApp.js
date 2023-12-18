@@ -28,11 +28,7 @@ const TodoApp = () => {
 
 
   
-    // const handleAddTodo = async (newTodo) => {
-    //   const addedTodo = await addTodo(newTodo);
-    //   setTodos([addedTodo,...todos]);
-    // };
-
+    
 
     const handleAddTodo = async (newTodo) => {
         const addedTodo = await addTodo({

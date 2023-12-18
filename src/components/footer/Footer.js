@@ -179,7 +179,7 @@ const Footer = () => {
   </div>
   
  
-  <div classNameName="text-center p-3" >
+  <div className="text-center p-3" >
     © 2020 Copyright:
     <a className="text-white" href="https://ezgamingworld.com/">ezgamingworld.com</a>
   </div>

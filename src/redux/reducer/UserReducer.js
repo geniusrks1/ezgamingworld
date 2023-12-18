@@ -28,7 +28,8 @@ const currentUser={
     displayName:userCredential.user.displayName,
     email:userCredential.user.email,
     photoURL:userCredential.user.photoURL,
-    userId:userCredential.user.uid
+    userId:userCredential.user.uid,
+    createdOn: new Date().toISOString(),
 };
 
 const userDocRef=doc(db,'users',currentUser.email);

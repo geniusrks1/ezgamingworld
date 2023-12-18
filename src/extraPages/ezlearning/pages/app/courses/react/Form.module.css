@@ -1,0 +1,148 @@
+/* Form.module.css */
+
+/* Overall form container */
+.formContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Heading styles */
+  .h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input fields */
+  .inputTypetext {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Checkboxes and labels */
+  .inputcheckbox  {
+    margin-right: 5px;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #0056b3;
+  }
+  
+  /* Solution section */
+  .solutionSection {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  /* Title, approach, complexity sections */
+  .solutionSection > div {
+    margin-bottom: 15px;
+  }
+  
+  /* Code input section */
+  .codeInputSection {
+    margin-top: 20px;
+  }
+  
+  /* Code type selection */
+  .select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+
+ 
+  
+ 
+
+
+
+  /* Form.module.css */
+
+/* Global styles or any additional global reset styles */
+
+.formContainer {
+    width: 70%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .formTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .inputField {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .checkboxContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .checkboxLabel {
+    margin-left: 5px;
+    font-weight: normal;
+  }
+  
+  .textEditor {
+    /* Styles for rich text editor */
+  }
+  
+  .textArea {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .selectField {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .aceEditor {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  .submitButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .formContainer p{
+    color: #333;
+  }

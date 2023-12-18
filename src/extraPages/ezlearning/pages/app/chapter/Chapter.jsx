@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Chapter.module.css";
 import { useParams,useOutletContext } from "react-router-dom";
 
+
 function Chapter() {
   const { chapterId }=useParams();
   const course=useOutletContext();
@@ -19,34 +20,32 @@ function Chapter() {
       <p className={styles.para}>{chapter.details}</p>
       <br />
       <br />
-      {/* <div className={styles.videos}>
-       
-        <iframe
-          width="800"
-          height="560"
-          src=""
-          title="React Video"
-          frameborder="1"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div> */}
-
+    
 <div>
 
-{chapter.easy.map((problem, index) => {
+{chapter.questions.map((problem, index) => {
   return(
         <div className={styles.column} key={index}>
           <div className={styles.number_column}>{index + 1}</div>
           <div className={styles.problem_column}>{problem.problem}</div>
-          <a className={`${styles.button} ${styles.practice_button}`} href={problem.link} target="_blank" rel="noopener noreferrer">
-            Practice
-          </a>
-         
-            <a className={`${styles.button} ${styles.solution_button}`} href={problem.solution} target="_blank" rel="noopener noreferrer">
-              Solution
-            </a>
-         
+
+    
+
+
+         {/* <button className={`${styles.button} ${styles.solve_button}`}>Show</button> */}
+
+         {problem.link &&      <a className={`${styles.button} ${styles.practice_button}`} href={problem.link} target="_blank" rel="noopener noreferrer">
+            LeetCode
+          </a>}
+
+          {problem.gfg &&   <a className={`${styles.button} ${styles.solution_button}`} href={problem.gfg} target="_blank" rel="noopener noreferrer">
+              gfg
+            </a> 
+}
+            {problem.codingNinja &&    <a className={`${styles.button} ${styles.solution_button}`} href={problem.codingNinja} target="_blank" rel="noopener noreferrer">
+            codingninja
+            </a> 
+            }
         </div>
   );
   }

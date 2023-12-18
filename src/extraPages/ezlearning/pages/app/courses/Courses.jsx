@@ -14,11 +14,10 @@ function Courses() {
       </div>
       <div className={style.courses}>
         {coursesData.map((course, index) => {
+            const rec = course.title === 'React' ? 'React' : `${course.id}`;
           return (
             <div key={index} className={style.card_container}>
-
-
-              <Link to={`${course.id}`}>
+              <Link to={rec}>
               <Card
                 key={course.id}
                 id={course.id}
@@ -31,6 +30,12 @@ function Courses() {
         }
         )
         }
+
+        <div>
+          <Link to='aptitude'> 
+          <Card key='aptitude' id='aptitude' title='Aptitude' img= '/static/studyHub/aptitude.jpg'/>
+          </Link>
+        </div>
       </div>
     </div>
    

@@ -10,7 +10,8 @@ const initialState={
     ]
 }
 
-export const getInitialState = createAsyncThunk("todo/getInitialState", 
+export const getInitialState = createAsyncThunk(
+    "todo/getInitialState", 
     ()=>{
         return axios.get("http://localhost:4100/api/todos");
     }

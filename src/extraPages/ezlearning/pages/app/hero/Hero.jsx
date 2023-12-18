@@ -7,7 +7,7 @@ function Hero() {
       <section className={style.logo_wrapper}>
         <img
           className={style.logo}
-          src='/static/studyhub/study-hub-logo.png'
+          src='./static/studyhub/study-hub-logo.png'
           alt='logo'
         />
       </section>

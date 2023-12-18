@@ -1,175 +1,143 @@
-import React ,{ useEffect, useRef, useState }from 'react';
+import React ,{ useEffect, useState }from 'react';
 import { useParams } from 'react-router-dom';
 import { cardData } from './BgmiTournamentList';
 import styles from './BgmiTournamentDetails.module.css';
+import Overview from './detailspageBottomNav/Overview';
+import Schedule from './detailspageBottomNav/Schedule';
+import Credentials from './detailspageBottomNav/Credentials';
+import {useSelector} from 'react-redux'
 
-//Import fireStore reference from frebaseInit file
-import {db} from '../../../firebaseinit';
-//Import all the required functions from fireStore
-import { collection, doc,  setDoc,onSnapshot} from "firebase/firestore"; 
+import Team from './detailspageBottomNav/Team';
+import Result from './detailspageBottomNav/Result';
+import Login from './detailspageBottomNav/Login';
+import Register from './detailspageBottomNav/Register';
+import { userSelector } from '../../../redux/reducer/UserReducer';
+
 
 const BgmiTournamentDetails = () => {
+const {user}=useSelector(userSelector);
+ 
   const { id } = useParams();
   const card = cardData.find((item) => item.id === id);
-  const formRef = useRef(null);
-
-
-  const [formData, setformData] = useState({teamName:"", leaderName:""})
-  const [teamsList, setteamsList] =  useState([]);
+  
 
 
 
 
 
-  const scrollToForm = () => {
-    formRef.current.scrollIntoView({ behavior: 'auto' });
-  };
+
+
+
+
+
+  // const scrollToForm = () => {
+  //   formRef.current.scrollIntoView({ behavior: 'auto' });
+  // };
+
+
+
 
   useEffect(()=>{
 document.title=card.title;
   },[card.title]);
 
 
-  async function handleSubmit(e){
-    e.preventDefault();
-    // added into firebase database        
-    await setDoc( doc(collection(db, "teamList")), {
-            teamName: formData.teamName,
-            leaderName: formData.leaderName,
-            createdOn: new Date()
-        });
-        setformData({teamName: "",leaderName:""})
-}
-
-
-useEffect(()=>{
-   onSnapshot(collection(db,"teamList"), (snapShot) => {
-    const datafromfirebase = snapShot.docs.map((doc) => {
-            return{
-              ...doc.data(),
-                id: doc.id
-                
-            }
-        })
-
- // Sort by timestamp (assuming 'createdOn' is the field to sort by)
- datafromfirebase.sort((a, b) => {
-  const timestampA = a.createdOn.toDate().getTime();
-  const timestampB = b.createdOn.toDate().getTime();
-  return timestampA - timestampB; // Ascending order (change to timestampB - timestampA for descending)
-});
 
 
 
 
 
 
-        setteamsList(datafromfirebase);
-})
-},[]);
-
-
-
-
-
-
-
-
-
-
-
-
-    // setteamsList([...teamsList,{teamName: formData.teamName,leaderName:formData.leaderName}]);
     
+
+
+    
+    const [selectedOption, setSelectedOption] = useState('overview');
+    const renderDetails = () => {
+      switch (selectedOption) {
+        case 'overview':
+          return <Overview />; 
+        case 'schedule':
+          return user ?<Schedule />: <Schedule />;
+        case 'credentials':
+          return user ?<Credentials />: <Credentials />;
+          case 'result':
+            return user ?<Result/>: <Result/>;
+          case 'team':
+            return <Team/>; 
+            case 'register':
+              return user ?<Register/>:<Login/>;
+        // Add cases for other options
+        default:
+          return <Overview />;
+      }
+    };
+
+
+
+    const handleRegister=()=>{
+    setSelectedOption('register')
+    
+    }
+
+
+
+
+
 
 
 
   return (
     <>
-      <div className={styles.container}>
-        <img src={card.imageUrl} alt={card.title} className={styles.image} />
-        <button onClick={scrollToForm}
-        className={styles.registerButton} >
-          Register
-        </button>
+<div className={styles.container}>
+  <div className={styles.imageContainer}>
+    <img src={card.imageUrl} alt={card.title} className={styles.image} />
+    <div className={styles.detailsOverlay}>
+      {/* Details to be shown */}
+      <img src={card.imageUrl} alt="Details" className={styles.detailsImage} />
+      <div className={styles.detailsText}>
+        {/* Text information: registration time, tournament start time, total teams, etc. */}
+        Registration Time: 10 dec<br />
+        Tournament Start Time: 20dec<br />
+        Total Teams: 100
+        {/* Add other details */}
       </div>
+      <button onClick={handleRegister} className={styles.registerButton}>
+    Register
+  </button>
+    </div>
+  </div>
+</div>
 
-      
-      <div ref={formRef} class=  {styles.div_container}>
-          <div className={styles.form} >
+<div>
+      <div className={styles.dnavbar}>
+        <button 
+          className={styles.navButton}
+        onClick={() => setSelectedOption('overview')}>Overview</button>
+        
+        <button  className={styles.navButton}
+         onClick={() => setSelectedOption('schedule')}>Schedule</button>
          
-            <h2>Registration Form</h2>
-
-
-            <form onSubmit={handleSubmit}>
-                <Row label="Team Name">
-                        <input className="input"
-                                placeholder="Enter your team nsme.."
-                                value={formData.teamName}
-                                onChange = {(e) => setformData({teamName: e.target.value, leaderName:formData.leaderName})}
-                        />
-                </Row >
-
-                <Row label="Leader Real Name">
-                        <textarea className="input content"
-                                placeholder="Enter Leader Real Name.."
-                                value={formData.leaderName}
-                                onChange = {(e) => setformData({teamName: formData.teamName,leaderName: e.target.value})}
-                        />
-                </Row >
-         
-                <button className = "btn">ADD</button>
-            </form>
-
-
-
-
-
-
-
-
-          </div>
-        </div>
-
-
-
-    
+        <button  className={styles.navButton}
+        onClick={() => setSelectedOption('credentials')}>Credentials</button>
+        <button  className={styles.navButton}
+        onClick={() => setSelectedOption('result')}>Result</button>
+        <button  className={styles.navButton}
+        onClick={() => setSelectedOption('team')}>Team</button>
+        <button  className={styles.navButton}
+        onClick={() => setSelectedOption('register')}>Register</button>
+        {/* Add buttons for other options */}
+      </div>
+      <div className={styles.ddetails}>
+        {renderDetails()}
+      </div>
+    </div>
 
       <div className={styles.details}>
         <p>Total Slots: {card.totalSlots}</p>
         <p>Filled Slots: {card.filledSlots}</p>
         <p>Registration Open Date: {card.registrationOpenDate}</p>
       </div>
-
-
- 
-
-
-
-
-
-
- 
-
-
-
-<div className={styles.div_groupList}>
-  <div className={styles.columnHeader}>Nos</div>
-  <div className={styles.columnHeader}>Team Name</div>
-  <div className={styles.columnHeader}>Leader Name</div>
-
-  {teamsList.map((team, index) => (
-    <React.Fragment key={index}>
-      <div>{index + 1}</div>
-      <div>{team.teamName}</div>
-      <div>{team.leaderName}</div>
-    </React.Fragment>
-  ))}
-</div>
-
-
-
-
     </>
   );
 };
@@ -177,20 +145,4 @@ useEffect(()=>{
 export default BgmiTournamentDetails;
 
 
-
-
-
-
-
-//Row component to introduce a new row section in the form
-function Row(props){
-  const{label} = props;
-  return(
-      <>
-      <label>{label}<br/></label>
-      {props.children}
-      <hr />
-      </>
-  )
-}
 

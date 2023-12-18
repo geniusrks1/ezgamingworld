@@ -44,7 +44,12 @@ import TODOList from "./extraPages/SkillTest/todolist/TodoApp"
 import ShoppingCartApp from "./extraPages/codingninjapractice/contextApi/shoppingCart/ShoppingCartApp";
 import PostKeeperApp from "./extraPages/codingninjapractice/contextApi/postKeeper/PostKeeperApp";
 import AppRoot from './extraPages/codingninjapractice/contextApi/DialectoApp/AppRoot';
-
+import ReactApp from "./extraPages/ezlearning/pages/app/courses/react/ReactApp";
+import FormComponent from "./extraPages/ezlearning/pages/app/courses/react/FormComponent";
+import SellerkinFeatures from "./extraPages/sellerkin/SellerkinFeatures";
+import EzApp from './extraPages/ChatApp/EzApp'
+import AdminPanel from "./adminControlersForms/AdminPanel";
+import Aptitude from "./extraPages/ezlearning/pages/app/aptitude/Aptitude";
 
 
 
@@ -54,6 +59,18 @@ function App() {
 
 const {user}=useSelector(userSelector);
 const dispatch=useDispatch();
+
+let User;
+
+if(user)
+User=user.email;
+else
+User='x.......1x1x1________x1@gmail.com'
+
+// console.log('User is ',User);
+const Admin="xy1004323@gmail.com"
+const isAdmin= User==Admin;;
+
 
 
   const browserRouter=createBrowserRouter(
@@ -90,11 +107,17 @@ const dispatch=useDispatch();
         {
         path:'bgmitournaments/:id',
         element:<BgmiTournamentDetails/>
-        },
-       
+        }
         
       ]
     },
+
+    ,
+    {
+     path:'adminpanel',
+     element:isAdmin ? <AdminPanel/>: <Login/>
+    },
+
 
 
     //resume
@@ -178,6 +201,17 @@ const dispatch=useDispatch();
          {
           path:':courseId',
           element:<Details/>
+        },{
+          path:'React',
+          element:<ReactApp/>,
+          children:[
+           { path:'add',
+          element:<FormComponent/>}
+          ]
+        },
+        {
+          path:'aptitude',
+          element:<Aptitude/>
         }
       ]
     },
@@ -264,8 +298,14 @@ const dispatch=useDispatch();
 },{
   path:'dialectoApp',
   element:<AppRoot/>
+},{
+  path:'sellerkin',
+  element:<SellerkinFeatures/>
 }
-
+,{
+  path:'ezchat',
+  element:<EzApp/>
+}
   ])
 
  

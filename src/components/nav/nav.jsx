@@ -2,35 +2,49 @@ import React, { useState } from 'react'
 import {NavLink, Outlet} from "react-router-dom"
 import {FaBars} from 'react-icons/fa'
 import styles from "./Nav.module.css"
-import {SiYoutubegaming} from 'react-icons/si'
+// import { userSelector } from '../../redux/reducer/UserReducer'
+// import { useSelector } from 'react-redux';
 
 import Footer from '../footer/Footer'
 
+
 const Nav = () => {
+// const user =useSelector(userSelector);  
 
-  const [isOpen, setIsOpen] = useState(false);
+const [showItems, setShowItems] = useState(false);
 
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+const toggleItems = () => {
+  setShowItems(!showItems);
+};
 
+ 
   return (
     <>
 <nav className={styles.navbar}>
-      {/* <div><SiYoutubegaming/> </div> */}
-      <div className={styles.logo}><img src='./static/ezlogo.png'/> </div>
-      <button className={styles.toggleButton} onClick={toggleNavbar}>
-       <FaBars/>
-      </button>
-      <ul className={`${styles.navList} ${isOpen ? styles.open : ''}`}>
-        <li> <NavLink to=''>Home</NavLink></li>
-        <li> <NavLink to='bgmitournaments'>BGMI</NavLink></li>
-        <li>FreeFire</li>
-       
-        <li>Features</li>
-      </ul>
-    </nav>
+      <div className={styles.left}>
+        <div className={styles.logo}> <img src='./static/ezlogo.png' alt='ezlogo'/></div>
+        <div className={styles.companyName}>EZGAMINGWORLD</div>
+        <input type="text" placeholder="Search" className={styles.searchBar} />
+      </div>
+  
 
+<div className={`${styles.middle} ${showItems ? styles.showItems : ''}`}>
+          <div className={styles.navItem}>Tournaments</div>
+          <div className={styles.navItem}>Scrims</div>
+          <div className={styles.navItem}>Contests</div>
+          <div className={styles.navItem}>Bgmi</div>
+          <div className={styles.navItem}>Entertainment</div>
+        </div>
+
+        <button className={styles.toggleButton} onClick={toggleItems}>
+          <FaBars />
+        </button>
+
+
+      <div className={styles.right}>
+        <div className={styles.login}>Login</div>
+      </div>
+    </nav>
     <Outlet/>
     <Footer/>
     </>

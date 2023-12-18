@@ -1,0 +1,35 @@
+/* Navbar.module.css */
+
+/* Navbar container styles */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  /* Navbar list styles */
+  .navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Navbar item styles */
+  .navItem {
+    margin: 0 10px;
+  }
+  
+  /* Navbar link styles */
+  .navLink {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Navbar link hover styles */
+  .navLink:hover {
+    color: #ffd700; /* Change to your preferred hover color */
+  }
+  
