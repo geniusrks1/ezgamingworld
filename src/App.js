@@ -46,10 +46,9 @@ import PostKeeperApp from "./extraPages/codingninjapractice/contextApi/postKeepe
 import AppRoot from './extraPages/codingninjapractice/contextApi/DialectoApp/AppRoot';
 import ReactApp from "./extraPages/ezlearning/pages/app/courses/react/ReactApp";
 import FormComponent from "./extraPages/ezlearning/pages/app/courses/react/FormComponent";
-import SellerkinFeatures from "./extraPages/sellerkin/SellerkinFeatures";
 import EzApp from './extraPages/ChatApp/EzApp'
-import AdminPanel from "./adminControlersForms/AdminPanel";
 import Aptitude from "./extraPages/ezlearning/pages/app/aptitude/Aptitude";
+import OneClickDrive from "./extraPages/oneclickdrive/componets/OneClickDrive";
 
 
 
@@ -59,18 +58,6 @@ function App() {
 
 const {user}=useSelector(userSelector);
 const dispatch=useDispatch();
-
-let User;
-
-if(user)
-User=user.email;
-else
-User='x.......1x1x1________x1@gmail.com'
-
-// console.log('User is ',User);
-const Admin="xy1004323@gmail.com"
-const isAdmin= User==Admin;;
-
 
 
   const browserRouter=createBrowserRouter(
@@ -111,16 +98,7 @@ const isAdmin= User==Admin;;
         
       ]
     },
-
-    ,
-    {
-     path:'adminpanel',
-     element:isAdmin ? <AdminPanel/>: <Login/>
-    },
-
-
-
-    //resume
+     //resume
     {
         path:'Rohitkumar',
         element:<Rhome/>
@@ -299,8 +277,8 @@ const isAdmin= User==Admin;;
   path:'dialectoApp',
   element:<AppRoot/>
 },{
-  path:'sellerkin',
-  element:<SellerkinFeatures/>
+  path:'oneClickDrive',
+  element:<OneClickDrive/>
 }
 ,{
   path:'ezchat',
