@@ -1,7 +1,14 @@
 import React from 'react'
 import styles from './Onclick.module.css'
-
+import { useEffect } from 'react'
 const OneClickDrive = () => {
+
+
+  useEffect(()=>{
+    document.title="OneClickDrive";
+    document.querySelector('link[rel="icon"]').setAttribute('href', 'globe.png')
+},[])
+
     
   return (
     <div className={styles.outerContainer}>
@@ -27,7 +34,7 @@ const OneClickDrive = () => {
   </div>
 
   <div className={`${styles.leftD} ${styles.hideforBigScreen}`}>
-<img src='/static/images/5.svg'/>
+<img src='/static/images/5.svg' alt=''/>
 </div>
 
   <div className={`${styles.right} ${styles.hideforSmallScreen}`}></div>
@@ -36,7 +43,7 @@ const OneClickDrive = () => {
 <div className={`${styles.drive} ${styles.hideforSmallScreen}`}>
 
 <div className={styles.leftD}>
-<img src='/static/images/5.svg'/>
+<img src='/static/images/5.svg' alt=''/>
 </div>
 
  <div className={styles.rightD}>
@@ -94,7 +101,7 @@ const OneClickDrive = () => {
   </div>
 
   <div className={`${styles.leftD} ${styles.hideforBigScreen}`}>
-<img src='/static/images/5.svg'/>
+<img src='/static/images/5.svg' alt=''/>
 </div>
   </div>
 
@@ -109,7 +116,7 @@ const OneClickDrive = () => {
       <div className={styles.location}>
     <div className={styles.addr}> AED 80</div>
         <div className={styles.message2}>
-          <img src='/static/images/6.svg'/>
+          <img src='/static/images/6.svg' alt=''/>
           <span>One-way</span>
         </div>
       </div>
@@ -117,7 +124,7 @@ const OneClickDrive = () => {
       <div className={styles.location}>
       <div className={styles.addr}>AED 150</div>
         <div className={styles.message2}>
-          <img src='/static/images/6.svg'/>
+          <img src='/static/images/6.svg' alt=''/>
           <span>Two-way</span>
         </div>
       </div>
